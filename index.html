@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="staff">
+        <h2>Staff password validator</h2>
+
+        <label for="password">Enter password : </label>
+        <input type="text" id="password">
+        <br>
+        <button class="check-password">Check Password</button>
+
+        <p id="password-info">Please enter a valid password</p>
+    </div>
+
+    <div class="customers">
+        <h2>Customers</h2>
+
+
+    </div>
+
+
+    <div class="menu-options">
+        <h2>Menu Options</h2>
+
+        <div class="menu">
+            <div class="starter">
+                <div>
+                    <p>Starter</p>
+                    <p>Quantity</p>
+                </div>
+
+                <div class="menu-item">
+                    <input type="radio" name="starter" class="starter-option" id="cw" value="chicken wings">Chicken Wings</input>
+                    <input type="number" name="quantity">
+                    <br>
+                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Broccoli(vegetarian)</input>
+                    <input type="number" name="quantity">
+                    <br>
+                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Lollipops(vegetarian)</input>
+                    <input type="number" name="quantity">
+                    <br>
+                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Beef strips</input>
+                    <input type="number" name="quantity">
+                    <br>
+                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Bread</input>
+                    <input type="number" name="quantity">
+                </div>
+            </div>
+
+            <div class="main">
+                <div>
+                    <p>Main</p>
+                </div>
+
+                <div class="menu-item">
+                    <input type="radio" name="main" class="main-option" id="cw" value="chicken wings">Chicken Wings</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="main" class="main-option" id="cw" value="">Broccoli(vegetarian)</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="main" class="main-option" id="cw" value="">Lollipops(vegetarian)</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="main" class="main-option" id="cw" value="">Beef strips</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="main" class="main-option" id="cw" value="">Bread</input>
+                    <input type="text" name="quantity">
+                </div>
+            </div>
+
+            <div class="deserts">
+                <div>
+                    <p>Deserts</p>
+                </div>
+
+                <div class="menu-item">
+                    <input type="radio" name="desert" class="starter-option" id="cw" value="chicken wings">Chicken Wings</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Broccoli(vegetarian)</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Lollipops(vegetarian)</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Beef strips</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Bread</input>
+                    <input type="text" name="quantity">
+                </div>
+            </div>
+
+
+            <div class="drinks">
+                <div>
+                    <p>Drinks</p>
+                </div>
+
+                <div class="menu-item">
+                    <input type="radio" name="drink" class="starter-option" id="cw" value="chicken wings">Chicken Wings</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Broccoli(vegetarian)</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Lollipops(vegetarian)</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Beef strips</input>
+                    <input type="text" name="quantity">
+                    <br>
+                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Bread</input>
+                    <input type="text" name="quantity">
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <label for="total">Total</label>
+            <input type="text" name="" id="total">
+            <br>
+            <label for="starter">Starter</label>
+            <input type="text" name="" id="starter">
+            <br>
+            <label for="main">Main</label>
+            <input type="text" name="" id="main">
+            <br>
+            <label for="deserts">Deserts</label>
+            <input type="text" name="" id="deserts">
+            <br>
+            <label for="deserts">Drinks</label>
+            <input type="text" name="" id="deserts">
+            <br>
+            <label for="vgcost">Vegetarian Costs</label>
+            <input type="text" name="" id="vgcost">
+            <br>
+            <label for="nvgcost">non-vegetarian Costs</label>
+            <input type="text" name="" id="nvgcost">
+            <br>
+            <button>Calculate</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
