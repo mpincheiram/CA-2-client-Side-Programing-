@@ -1,0 +1,65 @@
+.staff {
+    padding: 30px;
+    border: 2px solid grey;
+    margin-bottom: 7px;
+}
+
+#check-password {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+#password-info {
+    color: blue;
+}
+
+#password {
+    border-radius: 5px;
+}
+
+
+.starter-header, .menu-item, .summary-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.summary-item {
+    max-width: 50%;
+}
+
+
+.customers {
+    border: 2px solid grey;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+
+.menu-options {
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+.menu {
+    border: 2px solid grey;
+    padding: 30px;
+    margin-bottom: 7px;
+}
+
+.mi-right {
+    margin-left: auto;
+}
+.menu-item-details {
+    display: inline-block;
+}
+.summary {
+    padding: 30px;
+}
+.item-description {
+    font-size: 14px;
+}
+.item-title {
+    font-weight: bold;
+}
