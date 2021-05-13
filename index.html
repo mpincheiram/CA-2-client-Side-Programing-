@@ -16,7 +16,7 @@
         <label for="password">Enter password : </label>
         <input type="text" id="password">
         <br>
-        <button class="check-password">Check Password</button>
+        <button id="check-password">Check Password</button>
 
         <p id="password-info">Please enter a valid password</p>
     </div>
@@ -33,26 +33,82 @@
 
         <div class="menu">
             <div class="starter">
-                <div>
+                <div class="starter-header">
                     <p>Starter</p>
+                    <p>Price</p>
                     <p>Quantity</p>
                 </div>
 
-                <div class="menu-item">
-                    <input type="radio" name="starter" class="starter-option" id="cw" value="chicken wings">Chicken Wings</input>
-                    <input type="number" name="quantity">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Broccoli(vegetarian)</input>
-                    <input type="number" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span  class="item-title">Broccoli(vegetarian)</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Lollipops(vegetarian)</input>
-                    <input type="number" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span  class="item-title">Lollipops(vegetarian)</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Beef strips</input>
-                    <input type="number" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Beef strips</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="starter" class="starter-option" id="cw" value="">Bread</input>
-                    <input type="number" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Bread</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                    </div>
                 </div>
             </div>
 
@@ -61,21 +117,76 @@
                     <p>Main</p>
                 </div>
 
-                <div class="menu-item">
-                    <input type="radio" name="main" class="main-option" id="cw" value="chicken wings">Chicken Wings</input>
-                    <input type="text" name="quantity">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="main-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="main" class="main-option" id="cw" value="">Broccoli(vegetarian)</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="main-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="main" class="main-option" id="cw" value="">Lollipops(vegetarian)</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="main-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="main" class="main-option" id="cw" value="">Beef strips</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="main-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="main" class="main-option" id="cw" value="">Bread</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="main-item-quantity" disabled>
+                    </div>
                 </div>
             </div>
 
@@ -84,21 +195,76 @@
                     <p>Deserts</p>
                 </div>
 
-                <div class="menu-item">
-                    <input type="radio" name="desert" class="starter-option" id="cw" value="chicken wings">Chicken Wings</input>
-                    <input type="text" name="quantity">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Broccoli(vegetarian)</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Lollipops(vegetarian)</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Beef strips</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="desert" class="starter-option" id="cw" value="">Bread</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                    </div>
                 </div>
             </div>
 
@@ -108,48 +274,117 @@
                     <p>Drinks</p>
                 </div>
 
-                <div class="menu-item">
-                    <input type="radio" name="drink" class="starter-option" id="cw" value="chicken wings">Chicken Wings</input>
-                    <input type="text" name="quantity">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Broccoli(vegetarian)</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Lollipops(vegetarian)</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Beef strips</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                    </div>
                     <br>
-                    <input type="radio" name="drink" class="starter-option" id="cw" value="">Bread</input>
-                    <input type="text" name="quantity">
+                    <div class="menu-item">
+                        <div>
+                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                <div class="menu-item-details">
+                                    <span class="item-title">Chicken Wings</span>
+                                    <br>
+                                    <span class="item-description">The arm of a chicken</span>
+                                </div>
+                            </input>
+                        </div>
+                        <span>23.99</span>
+                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="summary">
-            <label for="total">Total</label>
-            <input type="text" name="" id="total">
+            <div class="summary-item">
+                <label for="total">Total</label>
+                <input type="text" name="result" id="total" disabled>
+            </div>
             <br>
-            <label for="starter">Starter</label>
-            <input type="text" name="" id="starter">
+            <div class="summary-item">
+                <label for="starter">Starter</label>
+                <input type="number" name="result" id="starter" disabled>
+            </div>
             <br>
-            <label for="main">Main</label>
-            <input type="text" name="" id="main">
+            <div class="summary-item">
+                <label for="main">Main</label>
+                <input type="number" name="result" id="main" disabled>
+            </div>
             <br>
-            <label for="deserts">Deserts</label>
-            <input type="text" name="" id="deserts">
+            <div class="summary-item">
+                <label for="deserts">Deserts</label>
+                <input type="number" name="result" id="deserts" disabled>
+            </div>
             <br>
-            <label for="deserts">Drinks</label>
-            <input type="text" name="" id="deserts">
+            <div class="summary-item">
+                <label for="drinks">Drinks</label>
+                <input type="number" name="result" id="drinks" disabled>
+            </div>
             <br>
-            <label for="vgcost">Vegetarian Costs</label>
-            <input type="text" name="" id="vgcost">
+            <div class="summary-item">
+                <label for="vgcost">Vegetarian Costs</label>
+                <input type="number" name="result" id="vgcost" disabled>
+            </div>
             <br>
-            <label for="nvgcost">non-vegetarian Costs</label>
-            <input type="text" name="" id="nvgcost">
+            <div class="summary-item">
+                <label for="nvgcost">Non-vegetarian Costs</label>
+                <input type="number" name="result" id="nvgcost" disabled>
+            </div>
             <br>
-            <button>Calculate</button>
+            <button id="calculate">Calculate</button>
         </div>
     </div>
 
