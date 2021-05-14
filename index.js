@@ -1,8 +1,8 @@
+//PASSWORD SECTION
+
 let password = document.querySelector("#password");
 let checkPassword = document.querySelector("#check-password");
 let passwordInfo = document.querySelector("#password-info");
-
-let calc = document.querySelector("#calculate");
 
 var errors = new Array();
 
@@ -47,6 +47,8 @@ function checkValidity(txt){
     }
 }
 
+
+//Checks if a condition is met
 function containsLowerCase(text){
     return /['a-z']/.test(text);
 }
@@ -72,6 +74,95 @@ function isLong(text){
 
 
 
+//CUSTOMERS SECTION
+
+let customers = document.querySelector(".customers");
+
+var imgClass = ['portrait', 'profile', 'figure', 'face', 'head', 'profile'];
+
+for(var i = 0; i < 5; i++){
+    // GET Request.
+    fetch('https://randomuser.me/api/')
+    // Handle success
+    .then(response => response.json())  // convert to json
+    .then(json => generateImage(json))
+    .catch(err => console.log('Request Failed', err)); // Catch errors
+
+}
+
+function generateImage(json){
+    // GET Request.
+    fetch('https://source.unsplash.com/800x600/?' + imgClass[Math.floor(Math.random()*6)] + "," + imgClass[Math.floor(Math.random()*6)])
+    // Handle success
+    .then(response => addCustomer(response.url, json))
+    .catch(err => console.log('Request Failed', err)); // Catch errors
+}
+
+function addCustomer(im, info){
+    let data = info.results[0];
+    console.log(data);
+
+    let cust = document.createElement("div");
+    cust.classList.add("customer");
+
+    let name = document.createElement("p");
+    name.classList.add("customer-name");
+    name.textContent = "Name : " + data.name.first;
+    cust.appendChild(name);
+
+    let image = document.createElement("div");
+    image.classList.add("image-container");
+    image.innerHTML = `<img class="gallery-image" src="${im}" alt="gallery image"/>`;
+    cust.appendChild(image);
+
+    let phone = document.createElement("p");
+    phone.textContent = "Phone number : " +  data.phone;
+    cust.appendChild(phone);
+
+    let dob = document.createElement("p");
+    dob.textContent = "DOB : " +  data.dob.date;
+    cust.appendChild(dob);
+
+    let age = document.createElement("p");
+    age.textContent = "Age : " +  data.dob.age;
+    cust.appendChild(age);
+
+    let email = document.createElement("p");
+    email.textContent = "Email : " +  data.email;
+    cust.appendChild(email);
+
+    let gender = document.createElement("p");
+    gender.textContent = "Gender : " +  data.gender;
+    cust.appendChild(gender);
+
+    let city = document.createElement("p");
+    city.textContent = "City : " +  data.location.city;
+    cust.appendChild(city);
+
+    let country = document.createElement("p");
+    country.textContent = "Country : " +  data.location.state;
+    cust.appendChild(country);
+
+    let postcode = document.createElement("p");
+    postcode.textContent = "PostCode : " +  data.location.postcode;
+    cust.appendChild(postcode);
+
+    customers.appendChild(cust);
+}
+
+
+
+
+
+
+
+
+
+//MENU SECTION
+
+
+
+let calc = document.querySelector("#calculate");
 
 //store the list of menu items categories
 var menu = [document.querySelectorAll(".starter-option"), document.querySelectorAll(".main-option"),
@@ -101,6 +192,8 @@ menu.forEach(element => {
 //store the list of result boxes
 var results = document.querySelectorAll("input[name=result]");
 
+
+//method to calculate and get summary for selected items
 function calculate(){
     var vegetarian = 0;
     var nonVegetarian = 0;
@@ -138,6 +231,8 @@ function calculate(){
     results[6].value = nonVegetarian;
 }
 
+
+//event listener for calculate button
 calc.addEventListener('click', function(){
     calculate();
 })
