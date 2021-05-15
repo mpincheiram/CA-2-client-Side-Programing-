@@ -1,4 +1,4 @@
-//PASSWORD SECTION
+//PASSWORD VALIDATOR SECTION
 
 let password = document.querySelector("#password");
 let checkPassword = document.querySelector("#check-password");
@@ -37,7 +37,7 @@ function checkValidity(txt){
         }
     }
 
-    //print out error pleasant or error message
+    //print out pleasant or error message
     if(errors.length < 1){
         passwordInfo.innerHTML = "Valid Password";
         passwordInfo.style.color = "green";
@@ -47,9 +47,6 @@ function checkValidity(txt){
         passwordInfo.style.color = "red";
     }
 }
-
-
-//Checks if a condition is met
 
 //return true if text contains at least one lowercase letter
 function containsLowerCase(text){
@@ -93,25 +90,27 @@ var imgClass = ['portrait', 'profile', 'figure', 'face', 'head', 'profile'];
 
 
 
-for(var i = 0; i < 5; i++){
+for(var i = 0; i < 6; i++){
     // GET Request.
     fetch('https://randomuser.me/api/')
-    // Handle success
+    // Handle success and pass to JSON format
     .then(response => response.json())  // convert to json
-    .then(json => generateImage(json))
-    .catch(err => console.log('Request Failed', err)); // Catch errors
+    .then(json => generateImage(json))  //pass json data and generate image for customer
+    .catch(err => console.log('Request Failed', err)); // Catch errors if any
 }
 
 
 
 function generateImage(json){
-    // GET Request.
+    // GET Request using a two random keywords as search parameter
     fetch('https://source.unsplash.com/800x600/?' + imgClass[Math.floor(Math.random()*6)] + "," + imgClass[Math.floor(Math.random()*6)])
-    // Handle success
+    // Handle success and pass response url
     .then(response => addCustomer(response.url, json))
-    .catch(err => console.log('Request Failed', err)); // Catch errors
+    .catch(err => console.log('Request Failed', err)); // Catch errors if any
 }
 
+
+//Adds a  new customer to DOM
 function addCustomer(im, info){
     let data = info.results[0];
 
@@ -173,8 +172,6 @@ function addCustomer(im, info){
 
 //MENU SECTION
 
-
-
 let calc = document.querySelector("#calculate");
 
 //store the list of menu items categories
@@ -182,6 +179,7 @@ var menu = [document.querySelectorAll(".starter-option"), document.querySelector
  document.querySelectorAll(".desert-option"), document.querySelectorAll(".drink-option")];
 
 //Disables input boxes for unchecked items
+//And Enable input boxes for checked items
 menu.forEach(element => {
     element.forEach(option => {
         option.addEventListener('change', function() {
@@ -210,6 +208,7 @@ function calculate(){
     var grandTotal = 0;
     var menuTotals = [];
 
+    //calculated the total for each category and the GrandTotal for all items
     menu.forEach(element => {
         eachTotal = 0;
         element.forEach(function(option) {
@@ -231,12 +230,11 @@ function calculate(){
         menuTotals.push(eachTotal);
     });
 
+    //Display the resul values in the diabled input boxes
     results[0].value = grandTotal;
-
     for(var i = 0; i < menuTotals.length; i++){
         results[i+1].value = menuTotals[i];
     }
-
     results[5].value = vegetarian;
     results[6].value = nonVegetarian;
 }
