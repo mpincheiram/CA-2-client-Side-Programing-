@@ -11,385 +11,397 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="index2.html" class="nav-item">Page 2</a>
+        <span class="nav-item">Client-Side Programming - Object Oriented Approach</span>
+        <span class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index2.html" class="nav-link">Page 2</a>
+        </span>
     </nav>
 
-    <div class="staff">
-        <h2>Staff password validator</h2>
-
-        <label for="password">Enter password : </label>
-        <input type="text" id="password">
-        <br>
-        <button id="check-password">Check Password</button>
-
-        <p id="password-info">Please enter a valid password</p>
-    </div>
-
-    <div class="customers">
-        <h2>Customers</h2>
 
 
-    </div>
+    <div class="main-container">
+        <!-- Staff Password Validator Section -->
 
+        <div class="staff">
+            <h2>Staff password validator</h2>
 
-    <div class="menu-options">
-        <h2>Menu Options</h2>
+            <label for="password">Enter password : </label>
+            <input type="password" id="password">
+            <br>
+            <button id="check-password">Check Password</button>
 
-        <div class="menu">
-            <div class="starter">
-                <div class="starter-header">
-                    <p>Starter</p>
-                    <p>Price</p>
-                    <p>Quantity</p>
-                </div>
-
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Chicken Wings</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span  class="item-title">Broccoli(vegetarian)</span>
-                                    <br>
-                                    <span class="item-description">A green vegetable</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span  class="item-title">Spinach(vegetarian)</span>
-                                    <br>
-                                    <span class="item-description">A healthy green vegetable</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Beef strips</span>
-                                    <br>
-                                    <span class="item-description">Slices of meat</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Bread</span>
-                                    <br>
-                                    <span class="item-description">A loaf(baked from flour)</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="starter-item-quantity" disabled>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main">
-                <div class="item-header">
-                    <p>Main</p>
-                </div>
-
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Irish stew</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="main-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Soda bread</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="main-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Boxty</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="main-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Coddle</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="main-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="main" class="main-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Smoked salmon</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="main-item-quantity" disabled>
-                    </div>
-                </div>
-            </div>
-
-            <div class="deserts">
-                <div class="item-header">
-                    <p>Deserts</p>
-                </div>
-
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Barmbrack</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Scones</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Yellowman</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Porter cake</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Irish apple tart</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="desert-item-quantity" disabled>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="drinks">
-                <div class="item-header">
-                    <p>Drinks</p>
-                </div>
-
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Irish coffee</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Guinness</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Bailey's</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Poiton</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
-                    </div>
-                    <br>
-                    <div class="menu-item">
-                        <div>
-                            <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
-                                <div class="menu-item-details">
-                                    <span class="item-title">Smithwick's</span>
-                                    <br>
-                                    <span class="item-description">The arm of a chicken</span>
-                                </div>
-                            </input>
-                        </div>
-                        <span>23.99</span>
-                        <input type="number" name="quantity" class="drink-item-quantity" disabled>
-                    </div>
-                </div>
-            </div>
+            <p id="password-info">Please enter a valid password</p>
         </div>
 
-        <div class="summary">
-            <div class="summary-item">
-                <label for="total">Total</label>
-                <input type="text" name="result" id="total" disabled>
+
+
+        <!-- Customers Section -->
+
+        <div class="customers">
+            <h2>Customers</h2>
+
+        </div>
+
+
+        <div class="menu-options">
+            <h2>Menu Options</h2>
+
+            <div class="menu">
+                <div class="starter">
+                    <div class="starter-header">
+                        <p>Starter</p>
+                        <p>Price</p>
+                        <p>Quantity</p>
+                    </div>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Chicken Wings</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span  class="item-title">Broccoli(vegetarian)</span>
+                                        <br>
+                                        <span class="item-description">A green vegetable</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span  class="item-title">Spinach(vegetarian)</span>
+                                        <br>
+                                        <span class="item-description">A healthy green vegetable</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Beef strips</span>
+                                        <br>
+                                        <span class="item-description">Slices of meat</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="starter" class="starter-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Bread</span>
+                                        <br>
+                                        <span class="item-description">A loaf(baked from flour)</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="starter-item-quantity" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="item-header">
+                        <p>Main</p>
+                    </div>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Irish stew</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="main-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Soda bread</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="main-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Boxty</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="main-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Coddle</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="main-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="main" class="main-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Smoked salmon</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="main-item-quantity" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deserts">
+                    <div class="item-header">
+                        <p>Deserts</p>
+                    </div>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Barmbrack</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Scones</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Yellowman</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Porter cake</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="desert" class="desert-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Irish apple tart</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="desert-item-quantity" disabled>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="drinks">
+                    <div class="item-header">
+                        <p>Drinks</p>
+                    </div>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Irish coffee</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Guinness</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Bailey's</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Poiton</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                        </div>
+                        <br>
+                        <div class="menu-item">
+                            <div>
+                                <input type="checkbox" name="drink" class="drink-option" value="chicken wings">
+                                    <div class="menu-item-details">
+                                        <span class="item-title">Smithwick's</span>
+                                        <br>
+                                        <span class="item-description">The arm of a chicken</span>
+                                    </div>
+                                </input>
+                            </div>
+                            <span>23.99</span>
+                            <input type="number" name="quantity" class="drink-item-quantity" disabled>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="summary-item">
-                <label for="starter">Starter</label>
-                <input type="number" name="result" id="starter" disabled>
+
+            <div class="summary">
+                <div class="summary-item">
+                    <label for="total">Total</label>
+                    <input type="text" name="result" id="total" disabled>
+                </div>
+                <br>
+                <div class="summary-item">
+                    <label for="starter">Starter</label>
+                    <input type="number" name="result" id="starter" disabled>
+                </div>
+                <br>
+                <div class="summary-item">
+                    <label for="main">Main</label>
+                    <input type="number" name="result" id="main" disabled>
+                </div>
+                <br>
+                <div class="summary-item">
+                    <label for="deserts">Deserts</label>
+                    <input type="number" name="result" id="deserts" disabled>
+                </div>
+                <br>
+                <div class="summary-item">
+                    <label for="drinks">Drinks</label>
+                    <input type="number" name="result" id="drinks" disabled>
+                </div>
+                <br>
+                <div class="summary-item">
+                    <label for="vgcost">Vegetarian Costs</label>
+                    <input type="number" name="result" id="vgcost" disabled>
+                </div>
+                <br>
+                <div class="summary-item">
+                    <label for="nvgcost">Non-vegetarian Costs</label>
+                    <input type="number" name="result" id="nvgcost" disabled>
+                </div>
+                <br>
+                <button id="calculate">Calculate</button>
             </div>
-            <br>
-            <div class="summary-item">
-                <label for="main">Main</label>
-                <input type="number" name="result" id="main" disabled>
-            </div>
-            <br>
-            <div class="summary-item">
-                <label for="deserts">Deserts</label>
-                <input type="number" name="result" id="deserts" disabled>
-            </div>
-            <br>
-            <div class="summary-item">
-                <label for="drinks">Drinks</label>
-                <input type="number" name="result" id="drinks" disabled>
-            </div>
-            <br>
-            <div class="summary-item">
-                <label for="vgcost">Vegetarian Costs</label>
-                <input type="number" name="result" id="vgcost" disabled>
-            </div>
-            <br>
-            <div class="summary-item">
-                <label for="nvgcost">Non-vegetarian Costs</label>
-                <input type="number" name="result" id="nvgcost" disabled>
-            </div>
-            <br>
-            <button id="calculate">Calculate</button>
         </div>
     </div>
 

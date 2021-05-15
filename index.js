@@ -10,13 +10,14 @@ checkPassword.addEventListener('click', function(){
     checkValidity(password.value);
 });
 
+
 function checkValidity(txt){
     //empty the errors array
     errors = new Array();
 
     //validates the password
     if(txt === ""){
-        errors.push("Password cannot be empty")
+        errors.push("Password cannot be empty");
     }
     else {
         if(!isLong(txt)){
@@ -38,36 +39,46 @@ function checkValidity(txt){
 
     //print out error pleasant or error message
     if(errors.length < 1){
-        passwordInfo.textContent = "Valid password";
+        passwordInfo.innerHTML = "Valid Password";
         passwordInfo.style.color = "green";
     }
     else {
-        passwordInfo.textContent = errors;
+        passwordInfo.innerHTML = errors;
         passwordInfo.style.color = "red";
     }
 }
 
 
 //Checks if a condition is met
+
+//return true if text contains at least one lowercase letter
 function containsLowerCase(text){
     return /['a-z']/.test(text);
 }
 
+//return true if text contains at least one uppercase letter
 function containsUpperCase(text){
     return /['A-Z']/.test(text);
 }
 
+//return true if text contains at least one number
 function containsNumber(text){
     return /\d/.test(text);
 }
 
+//return true if text contains at least one symbol
 function containsSymbol(text){
     return /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(text);
 }
 
+//return true if text is longer than 7 letters
 function isLong(text){
     return text.length > 7;
 }
+
+
+
+
 
 
 
@@ -80,6 +91,8 @@ let customers = document.querySelector(".customers");
 
 var imgClass = ['portrait', 'profile', 'figure', 'face', 'head', 'profile'];
 
+
+
 for(var i = 0; i < 5; i++){
     // GET Request.
     fetch('https://randomuser.me/api/')
@@ -87,8 +100,9 @@ for(var i = 0; i < 5; i++){
     .then(response => response.json())  // convert to json
     .then(json => generateImage(json))
     .catch(err => console.log('Request Failed', err)); // Catch errors
-
 }
+
+
 
 function generateImage(json){
     // GET Request.
@@ -100,7 +114,6 @@ function generateImage(json){
 
 function addCustomer(im, info){
     let data = info.results[0];
-    console.log(data);
 
     let cust = document.createElement("div");
     cust.classList.add("customer");
@@ -180,9 +193,6 @@ menu.forEach(element => {
         });
     });
 });
-
-
-
 
 
 

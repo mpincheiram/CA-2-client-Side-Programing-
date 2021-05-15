@@ -1,10 +1,16 @@
+body {
+    background-color: rgb(221, 230, 247);
+    margin: 0;
+}
+
 .staff {
     padding: 30px;
     border: 2px solid grey;
     margin-bottom: 7px;
+    border-radius: 10px;
 }
 
-#check-password, #calculate {
+#check-password, #calculate, #add-food, .remove-food {
     background-color: blue;
     color: white;
     padding: 3px;
@@ -12,19 +18,36 @@
     margin-top: 5px;
 }
 
+#check-password:hover, #calculate:hover, #add-food:hover {
+    background-color: rgb(128, 180, 223);
+    color: rgb(15, 11, 80);
+}
+
+.remove-food {
+    background-color: red;
+}
+.remove-food:hover {
+    background-color: rgb(223, 128, 128);
+    color: rgb(24, 20, 75);
+}
+
 #password-info {
     color: blue;
 }
 
-#password {
+#password, #foodname, #foodprice, #fooddesc {
     border-radius: 5px;
 }
 
 
-.starter-header, .menu-item, .summary-item {
+.starter-header, .menu-item, .summary-item, .add-item, .foods-title, nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.main-container {
+    padding: 10px;
 }
 
 .item-header, .starter-header {
@@ -42,11 +65,20 @@
     border: 2px solid grey;
     padding: 10px;
     margin-bottom: 7px;
+    border-radius: 10px;
+}
+
+.list-of-foods, .add-food {
+    border: 2px solid grey;
+    padding: 10px;
+    margin-bottom: 7px;
+    border-radius: 10px;
 }
 
 .menu-options {
     border: 2px solid grey;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .menu {
@@ -67,9 +99,15 @@
 }
 .item-description {
     font-size: 14px;
+    color: rgb(13, 86, 109);
 }
 .item-title {
     font-weight: bold;
+    color: rgb(6, 99, 34);
+}
+
+.item-price {
+    color: green;
 }
 
 .gallery-image {
@@ -92,12 +130,61 @@
 
 nav {
     padding: 10px 0px;
+    margin: 0 0 10px 0;
+    background-color: blue;
 }
 
 .nav-item {
-    padding: 5px;
-    background-color: rgb(87, 199, 219);
-    color: blue;
-    margin: 0 auto;
+    padding: 2px 5px;
+    color: white;
     font-size: 24px;
+}
+
+.nav-link {
+    padding: 2px 5px;
+    margin: 0 2px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(65, 65, 212);
+}
+.nav-link:hover {
+    color: blue;
+    background-color: rgb(158, 170, 224);
+    border: 2px solid rgb(218, 218, 226);
+}
+
+/* Second Page */
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.lof {
+    color: blue;
+    text-align: center;
+    padding: 4px;
+}
+
+.foods {
+    margin-bottom: 20px;
+}
+
+.remove-food {
+    height: fit-content;
+}
+
+.foods-title > p:first-child {
+    min-width: 100px;
+}
+
+.foods-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(77, 77, 194);
+}
+
+.add-item label {
+    color: rgb(13, 105, 13);
 }
